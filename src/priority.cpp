@@ -3,7 +3,7 @@
 #include <limits>
 #include <algorithm>
 
-// Priority Scheduling - (non-preemptive Priority Scheduling)
+// Priority Scheduling - Non-preemptive Priority Scheduling
 void calculateTimesPriority(std::vector<Process>& processes, std::vector<GanttChartEntry>& gantt_chart) {
     int n = processes.size(), current_time = 0;
     std::vector<bool> completed(n, false);
