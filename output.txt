@@ -1,0 +1,64 @@
+
+========== First Come First Serve (FCFS) ==========
+
+PID   Arrival   Burst   Priority  Waiting   Turnaround  Response  Completion
+1     0         20      3         0         20          0         20        
+2     1         2       1         19        21          19        22        
+3     2         3       2         20        23          20        25        
+
+Average Waiting Time: 13.00
+Average Turnaround Time: 21.33
+
+Gantt Chart:
+ ------------------
+|  P1  |  P2  |  P3  |
+ ------------------
+020    22    25    
+
+========== Shortest Remaining Time First (SRTF) ==========
+
+PID   Arrival   Burst   Priority  Waiting   Turnaround  Response  Completion
+1     0         20      3         5         25          0         25        
+2     1         2       1         0         2           0         3         
+3     2         3       2         1         4           1         6         
+
+Average Waiting Time: 2.00
+Average Turnaround Time: 10.33
+
+Gantt Chart:
+ ------------------
+|  P2  |  P3  |  P1  |
+ ------------------
+03     6     25    
+
+========== Priority Scheduling ==========
+
+PID   Arrival   Burst   Priority  Waiting   Turnaround  Response  Completion
+1     0         20      3         0         20          0         20        
+2     1         2       1         19        21          19        22        
+3     2         3       2         20        23          20        25        
+
+Average Waiting Time: 13.00
+Average Turnaround Time: 21.33
+
+Gantt Chart:
+ ------------------
+|  P1  |  P2  |  P3  |
+ ------------------
+020    22    25    
+
+========== Round Robin (RR) ==========
+
+PID   Arrival   Burst   Priority  Waiting   Turnaround  Response  Completion
+1     0         20      3         5         25          0         25        
+2     1         2       1         4         6           0         7         
+3     2         3       2         5         8           0         10        
+
+Average Waiting Time: 4.67
+Average Turnaround Time: 13.00
+
+Gantt Chart:
+ ------------------------------------
+|  P1  |  P2  |  P3  |  P1  |  P1  |  P1  |
+ ------------------------------------
+05     7     10    15    20    25    
