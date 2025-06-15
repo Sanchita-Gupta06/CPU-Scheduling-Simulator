@@ -1,14 +1,14 @@
 # CPU Scheduling Simulator
 
-A complete CPU Scheduling Simulator written in C++ that implements multiple CPU scheduling algorithms. The simulator can run FCFS, SRTF, Priority Scheduling, and Round Robin, and allows users to compare scheduling strategies on various performance metrics. It also includes an automatic scheduling mode that selects the most suitable algorithm based on process burst times and supports CLI-based interactive input.
+A  CPU Scheduling Simulator in C++ that supports multiple scheduling algorithms: FCFS, SRTF, Priority, and Round Robin. It features a CLI interface for manual or file-based input, displays detailed process metrics, Gantt charts, and includes an Auto mode to select the best algorithm based on burst time patterns.
 
 ---
 
 ## Introduction
 
-CPU Scheduling is a core operating system concept that decides which of the ready processes gets the CPU. Efficient scheduling improves system throughput, CPU utilization, and responsiveness.
+CPU Scheduling is a key part of how operating systems manage multiple running programs. It decides which process should use the CPU next. Good scheduling helps make the system run smoothly and respond quickly.
 
-This simulator helps visualize and compare the behavior and efficiency of different algorithms under a variety of input conditions. It is ideal for OS education, benchmarking, or systems experimentation.
+This simulator shows how different CPU scheduling algorithms work and lets you compare their performance. It's useful for learning, testing different process setups, or understanding how scheduling affects program execution.
 
 ---
 
